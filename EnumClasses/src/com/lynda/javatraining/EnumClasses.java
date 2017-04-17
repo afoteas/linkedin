@@ -10,7 +10,7 @@ public class EnumClasses {
 		jar.addOlive("Kalamata", 0x000000);
 		jar.addOlive("Kalamata", 0x000000);
 		jar.addOlive("Kalamata", 0x000000);
-		jar.addOlive("Kalamata", 0x000000);
+		jar.addOlive("Mani", 0x000000);
 		jar.reportOlives();
 	}
 	
