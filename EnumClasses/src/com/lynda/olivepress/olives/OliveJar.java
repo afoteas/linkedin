@@ -9,21 +9,27 @@ public class OliveJar {
 	{
 		System.out.println("initializing...");
 		olives = new ArrayList<>();
-		olives.add(new Olive("Golden", 0xDA9100));
+		olives.add(new Olive(OliveName.GOLDEN, 0xDA9100));
 	}
 	
 	public OliveJar() {
 		System.out.println("Constructor...");
 	}
 	
-	public OliveJar(int nOlives, String oliveName, long color) {
+	public OliveJar(int nOlives, OliveName oliveName, long color) {
 		for (int i = 1; i <= nOlives; i++) {
+			System.out.println("KIKI!");
 			olives.add(new Olive(oliveName, color));
+			Olive obj=olives.get(i);
+			obj.toString();
 		}
 	}
 
-	public void addOlive(String oliveName, long color) {
-		olives.add(new Olive(oliveName, color));
+	public void addOlive(OliveName oliveName, long color) {
+		Olive obj = new Olive(oliveName, color);
+		olives.add(obj);
+		System.out.println("KIKI!");
+		System.out.println(obj.toString());
 	}
 	
 	public void reportOlives() {

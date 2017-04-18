@@ -1,5 +1,12 @@
 package com.lynda.olivepress.olives;
 
 public enum OliveName {
-KALAMATA, LIGURIO, PICHOLINE, GOLDEN
+Kalamata, LIGURIO, PICHOLINE, GOLDEN;
+
+private String nameAsString;
+
+//constructor  -- in enums constructors MUST be private
+
+
+
 }
