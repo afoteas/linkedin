@@ -21,7 +21,10 @@ public class Main {
 		list.addFirst(new Ligurio());
 		
 		display(list);
+		Olive o1 = list.poll();
+		System.out.println(o1.oliveName.toString());
 		
+		display(list);
 	}
 	
 	static private void display(Collection<Olive> col) {
